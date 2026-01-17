@@ -1,0 +1,34 @@
+### CREATE
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+  "name": "Somchai",
+  "email": "somchai@mail.com",
+  "phone": "0812345678",
+  "address": "Bangkok"
+}
+
+### READ ALL
+GET http://localhost:3000/customers
+
+### READ BY ID
+GET http://localhost:3000/customers/5
+
+### UPDATE
+PUT http://localhost:3000/customers/5
+Content-Type: application/json
+
+{
+  "name": "Somchai Updated",
+  "email": "somchai@mail.com",
+  "phone": "0899999999",
+  "address": "Chiang Mai"
+}
+
+### DELETE
+DELETE http://localhost:3000/customers/5
+
+
+
+
